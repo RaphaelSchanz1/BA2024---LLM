@@ -373,9 +373,9 @@ def neighbourhoodchat(message):
     elif 'Message' in message:
         message = message['Message']
 
-    chat_id = "-4596195001"
+    chat_id = ""
 
-    token = "7996141890:AAHr476ygvFtIbTOh2kFA3f8nNg4Vx_Kkbg"
+    token = ""
     url = f"https://api.telegram.org/bot{token}/sendMessage"
     payload = {
         'chat_id': chat_id,
@@ -437,7 +437,7 @@ def sendmessage(params):
     if str(who_lower) in contacts:
         chat_id = contacts[who_lower]
 
-    token = "7996141890:AAHr476ygvFtIbTOh2kFA3f8nNg4Vx_Kkbg"
+    token = ""
     url = f"https://api.telegram.org/bot{token}/sendMessage"
     payload = {
         'chat_id': chat_id,
